@@ -1,10 +1,13 @@
 body {
     background-color: #E4E5E7;
+    display: flex;
+    justify-content: center;
 }
 
 table {
     width: 100%;
     max-width: 600px;
+    border-spacing: 0;
 }
 
 .thead__bg--dark-green {
@@ -13,6 +16,7 @@ table {
 
 .thead__bg--light-green {
     background-color: #C4DE70;
+    padding: 0;
 }
 
 tbody {
@@ -67,10 +71,20 @@ a {
     font-weight: 500;
 }
 
-tfoot tr:nth-child(2)::after {
+.line::after {
     content: " ";
     display: block;
     height: 3px;
     width: 550px;
     background-color: #cccccc;
+    margin: 10px 25px;
+}
+
+.logo {
+    width: 107px;
+    height: 64px;
+}
+
+.bg {
+    width: 602px;
 }
